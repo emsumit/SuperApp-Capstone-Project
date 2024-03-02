@@ -3,6 +3,7 @@ import Register from "./pages/Register";
 import Display from "./pages/Display";
 import Movies from "./pages/Movies";
 import Browser from "./pages/Browser";
+import "./App.css";
 
 function App() {
   return (

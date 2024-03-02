@@ -24,9 +24,8 @@ export default function RegisterForm() {
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
-  const handleSignUp = (e) => {
+  const handleSignUp = () => {
     let isError = false;
-    // e.preventDefault();
     if (formValues.name.trim().length === 0) {
       setErrors((prev) => ({ ...prev, name: "Name is Required" }));
       isError = true;
