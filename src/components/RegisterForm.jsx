@@ -60,6 +60,7 @@ export default function RegisterForm() {
       setErrors((prev) => ({ ...prev, checkbox: null }));
     }
     if (!isError) {
+      localStorage.setItem("userInfo", JSON.stringify(formValues));
       navigate("/movies");
     }
   };
