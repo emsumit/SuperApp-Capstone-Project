@@ -1,6 +1,6 @@
 # React + Vite
 
-Deployed Link: <a hreff="https://super-app-capstone-project.vercel.app/">Click Here</a>
+Deployed Link: <a href="https://super-app-capstone-project.vercel.app/">Click Here</a>
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
