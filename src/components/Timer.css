@@ -1,0 +1,35 @@
+.timer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.timer-btns {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.timer-btns > div {
+  justify-content: space-between;
+}
+.timer-btns > div > div {
+  flex-direction: column;
+  color: #949494;
+}
+.custom-up-button {
+  background: url("../assets/up.png") no-repeat center center;
+  padding: 15px 20px;
+  border: none;
+}
+.custom-down-button {
+  background: url("../assets/down.png") no-repeat center center;
+  padding: 15px 20px;
+  border: none;
+}
+.start-btn {
+  width: 100%;
+  height: 30px;
+  background-color: #ff6a6a;
+  color: white;
+  border-radius: 15px;
+}

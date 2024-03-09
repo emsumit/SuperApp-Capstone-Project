@@ -3,15 +3,15 @@ import "./Weather.css";
 
 export default function Weather() {
   const [weather, setWeather] = useState(null);
-  //   useEffect(() => {
-  //     fetch(
-  //       "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=oyz6LTXPYe2kllKFHdiFIR0QWUosagX6"
-  //     )
-  //       .then((data) => data.json())
-  //       .then((data) => setWeather(data))
-  //       .catch((error) => console.log(error));
-  //   }, []);
-  //   console.log(weather);
+  useEffect(() => {
+    // fetch(
+    //   "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=oyz6LTXPYe2kllKFHdiFIR0QWUosagX6"
+    // )
+    //   .then((data) => data.json())
+    //   .then((data) => setWeather(data))
+    //   .catch((error) => console.log(error));
+  }, []);
+  console.log(weather);
   return (
     <div className="main-weather">
       <div className="date-time">Time</div>

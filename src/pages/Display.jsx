@@ -3,9 +3,15 @@ import UserInfo from "../components/UserInfo";
 import Notes from "../components/Notes";
 import Weather from "../components/Weather";
 import News from "../components/News";
+import Timer from "../components/Timer";
 import "./Display.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Display() {
+  const navigate = useNavigate();
+  const handleChange = () => {
+    navigate("/Browser");
+  };
   return (
     <>
       <div className="left-container">
@@ -19,12 +25,16 @@ export default function Display() {
             <Notes />
           </div>
         </div>
-        <div className="timer">Timer</div>
+        <div className="timer">
+          <Timer />
+        </div>
       </div>
 
       <div className="news">
         <News />
-        <button className="next-btn">Next Page</button>
+        <button onClick={handleChange} className="next-btn">
+          Next Page
+        </button>
       </div>
     </>
   );

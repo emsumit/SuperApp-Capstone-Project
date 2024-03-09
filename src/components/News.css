@@ -4,5 +4,28 @@
   width: 300px;
   background-color: white;
   border-radius: 15px;
-  color: black;
+  color: #272727;
+  flex-direction: column;
+}
+.news-main > div {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-main > div > img {
+  margin: 0;
+  border-radius: 15px 15px 0 0;
+}
+.news-main > div > h1 {
+  margin: 0;
+  padding: 20px 20px;
+  font-size: 1.6rem;
+  background-color: #000000bd;
+  color: white;
+}
+.content {
+  margin: 20px;
+  padding-top: 2px;
+  height: 220px;
 }
