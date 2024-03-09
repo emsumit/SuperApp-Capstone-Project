@@ -1,0 +1,21 @@
+.main-notes {
+  display: flex;
+  align-content: end;
+  flex-direction: column;
+  width: 300px;
+  height: 430px;
+  border-radius: 15px;
+  background-color: #f1c75b;
+}
+.main-notes > h1 {
+  color: black;
+  margin: 8%;
+}
+.text-area {
+  margin: 0 8% 8% 8%;
+  width: 83%;
+  height: 90%;
+  padding: 0;
+  background-color: #f1c75b;
+  border: none;
+}

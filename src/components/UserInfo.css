@@ -1,0 +1,39 @@
+.userinfo-main {
+  margin-bottom: 30px;
+  width: 440px;
+  height: 280px;
+  display: flex;
+  background-color: #5746ea;
+  border-radius: 20px;
+}
+.user-img {
+  margin: 2%;
+}
+.user-information {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  justify-content: space-around;
+}
+.user-data {
+  display: flex;
+  flex-direction: column;
+}
+.user-data > p {
+  margin: 0 0 5px 0;
+}
+.user-data > h2 {
+  margin: 0 0 5px 0;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-item {
+  margin: 6px;
+  width: 120px;
+  height: 30px;
+  background-color: #9f94ff;
+  align-items: center;
+  border-radius: 25px;
+}

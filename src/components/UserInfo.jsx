@@ -1,55 +1,25 @@
 import React from "react";
 import profileBig from "../assets/profileBig.png";
+import "./UserInfo.css";
 
 export default function UserInfo() {
   const info = JSON.parse(localStorage.getItem("userInfo"));
   const movies = JSON.parse(localStorage.getItem("movies"));
   return (
-    <div
-      style={{
-        width: "440px",
-        height: "280px",
-        display: "flex",
-
-        backgroundColor: "#5746EA",
-        borderRadius: "20px",
-      }}
-    >
-      <div style={{ margin: "2%" }}>
+    <div className="userinfo-main">
+      <div className="user-img">
         <img src={profileBig} />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          margin: "5%",
-          justifyContent: "space-around",
-        }}
-      >
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <p style={{ margin: "0 0 5px 0" }}>{info.name}</p>
-          <p style={{ margin: "0 0 5px 0" }}>{info.email}</p>
-          <h2 style={{ margin: "0 0 5px 0" }}>{info.username}</h2>
+      <div className="user-information">
+        <div className="user-data">
+          <p>{info.name}</p>
+          <p>{info.email}</p>
+          <h2>{info.username}</h2>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="movie-list">
           {movies.map((item) => {
             return (
-              <div
-                style={{
-                  margin: "6px",
-                  width: "120px",
-                  height: "30px",
-                  backgroundColor: "#9F94FF",
-                  alignItems: "center",
-                  borderRadius: "25px",
-                }}
-                key={item}
-              >
+              <div className="movie-item" key={item}>
                 {item}
               </div>
             );
